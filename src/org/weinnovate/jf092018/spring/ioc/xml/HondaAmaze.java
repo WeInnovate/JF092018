@@ -1,6 +1,6 @@
 package org.weinnovate.jf092018.spring.ioc.xml;
 
-public class HondaCity {
+public class HondaAmaze {
 
 	private String color;
 
@@ -8,11 +8,13 @@ public class HondaCity {
 		return color;
 	}
 
-	public void setColor(String color) {
+	public HondaAmaze(String color) {
+		super();
 		this.color = color;
+		System.out.println(this.getClass().getSimpleName() + " is being manufactured.");
 	}
 
-	public HondaCity() {
+	public HondaAmaze() {
 		System.out.println(this.getClass().getSimpleName() + " is being manufactured.");
 	}
 
