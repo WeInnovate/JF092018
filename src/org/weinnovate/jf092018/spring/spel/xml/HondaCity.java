@@ -1,25 +1,34 @@
-package org.weinnovate.jf092018.spring.ioc.xml;
+package org.weinnovate.jf092018.spring.spel.xml;
 
-public class HondaAmaze implements Car {
+public class HondaCity implements Car {
 
 	private String color;
+	
+	private Engine engine;
+
+	public Engine getEngine() {
+		return engine;
+	}
+
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
 
 	public String getColor() {
 		return color;
 	}
 
-	public HondaAmaze(String color) {
-		super();
+	public void setColor(String color) {
 		this.color = color;
-		System.out.println(this.getClass().getSimpleName() + " is being manufactured.");
 	}
 
-	public HondaAmaze() {
+	public HondaCity() {
 		System.out.println(this.getClass().getSimpleName() + " is being manufactured.");
 	}
 
 	@Override
 	public void driveTheCar() {
 		System.out.println("Driving the " + this.getClass().getSimpleName() + " of " + color + " color");
+		engine.move();
 	}
 }
