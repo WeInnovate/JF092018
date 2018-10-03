@@ -9,7 +9,7 @@ public class CarShowRoom {
 //		car.driveTheCar();
 
 //		take help from spring
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ioc-spring-config.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("org/weinnovate/jf092018/spring/ioc/xml/ioc-spring-config.xml");
 		Car car = (Car) context.getBean("car");
 //		HondaCity car = (HondaCity) context.getBean("car");
 //		HondaAmaze car2 = (HondaAmaze) context.getBean("car2");
