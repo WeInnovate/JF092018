@@ -20,6 +20,32 @@
 				<td><form:input type="text" path="age" /></td>
 			</tr>
 			<tr>
+				<td><label>Gender</label></td>
+				<td>Male: <form:radiobutton path="gender" value="Male" /> &nbsp; Female: <form:radiobutton path="gender" value="Female" /></td>
+			</tr>
+			<tr>
+				<td><label>Country</label></td>
+				<td><form:select path="country">
+				<form:option value="IND">India</form:option>
+				<form:option value="USA">United States of America</form:option>
+				<form:option value="UK">United Kingdom</form:option>
+				</form:select></td>
+			</tr>
+			<tr>
+				<td><label>Courses</label></td>
+				<td>M1: <form:checkbox path="courses" value="Core Java" /> &nbsp;
+				M2: <form:checkbox path="courses" value="Advance Java" />&nbsp;
+				M3: <form:checkbox path="courses" value="Java Frameworks" /></td>
+			</tr>
+			<tr>
+				<td><label>Are You Experienced?</label></td>
+				<td><form:checkbox path="areYouExperienced" /></td>
+			</tr>
+			<tr>
+				<td><label>Comment</label></td>
+				<td><form:textarea path="comment" cols="20" rows="5" /></td>
+			</tr>
+			<tr>
 				<td><input type="reset" ></td>
 				<td><input type="submit" value="Register" ></td>
 			</tr>
